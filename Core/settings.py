@@ -48,6 +48,9 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    # Hindi localization
+    'django.middleware.locale.LocaleMiddleware',
+    # Normal middlewares
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -55,7 +58,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     # Custom
     'whitenoise.middleware.WhiteNoiseMiddleware',
-    'django.middleware.locale.LocaleMiddleware',
 
 ]
 
@@ -77,10 +79,6 @@ TEMPLATES = [
     },
 ]
 
-# Locale paths for translation:
-LOCALE_PATHS = [
-    os.path.join(BASE_DIR, 'locale'),
-]
 
 
 WSGI_APPLICATION = 'Core.wsgi.application'
@@ -119,11 +117,6 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
-# Languages
-LANGUAGES = [
-    ('en', 'English'),
-    ('hi', 'Hindi'),
-]
 
 LANGUAGE_CODE = 'en-us'
 
@@ -154,7 +147,20 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
+# Languages
+from django.utils.translation import ugettext_lazy as _
+LANGUAGES = (
+  
+   ('en', _('English')),
+   ('hi', _('Hindi')),
+   
+)
 
 # Default primary key field type
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Locale paths for translation:
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'locale'),
+]
