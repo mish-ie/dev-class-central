@@ -1,0 +1,30 @@
+/* @font-face{
+    font-family: Newyork;
+    src: local('Newyork'),url('../fonts/source-sans-pro-400-italic-latin.woff2')
+    format("truetype");
+  }
+
+  @font-face{
+    font-family: Newyork;
+    src: local('Newyork'),url('../fonts/source-sans-pro-400-regular-latin.woff2')
+    format("truetype");
+  }
+
+  @font-face{
+    font-family: Newyork;
+    src: local('Newyork'),url('../fonts/source-sans-pro-600-semibold-latin.woff2')
+    format("truetype");
+  }
+
+  @font-face{
+    font-family: Newyork;
+    src: local('Newyork'),url('../fonts/source-sans-pro-700-bold-latin.woff2')
+    format("truetype");
+  } */
+/* 
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/source-sans-pro-700-bold-latin.woff2') format('woff2');
+  } */
