@@ -1,74 +1,46 @@
-/* @font-face{font-family:Source Sans Pro;font-style:italic;font-weight:400;font-display:swap; */
+@font-face{
+  font-family:Source Sans Pro;
+  font-style:italic;
+  font-weight:400;
+  font-display:swap;
+  src: local('Source Sans Pro'),url('../fonts/source-sans-pro-400-italic-latin.woff2')
+  format("truetype");
+  }
 
-a,
-abbr,
-address,
-article,
-aside,
-audio,
-b,
-blockquote,
-body,
-canvas,
-caption,
-cite,
-code,
-dd,
-del,
-details,
-dfn,
-div,
-dl,
-dt,
-em,
-fieldset,
-figcaption,
-figure,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-hgroup,
-html,
-i,
-img,
-input,
-ins,
-kbd,
-label,
-legend,
-li,
-menu,
-nav,
-object,
-ol,
-p,
-pre,
-q,
-samp,
-section,
-small,
-span,
-strong,
-sub,
-summary,
-sup,
-table,
-tbody,
-td,
-textarea,
-tfoot,
-th,
-thead,
-tr,
-ul,
-var,
-video {
+  @font-face{
+    font-family:Source Sans Pro;
+    font-style:normal;
+    font-weight:400;
+    font-display:swap;
+    src: local('Source Sans Pro'),url('../fonts/source-sans-pro-400-regular-latin.woff2')
+    format("truetype");
+    }
+
+@font-face{
+    font-family:Source Sans Pro;
+    font-style:normal;
+    font-weight:600;
+    font-display:swap;
+    src: local('Source Sans Pro'),url('../fonts/source-sans-pro-600-semibold-latin.woff2')
+    format("truetype");
+    }
+
+@font-face{
+  font-family:Source Sans Pro;
+  font-style:bold;
+  font-weight:700;
+  font-display:swap;
+  src: local('Source Sans Pro'),url('../fonts/source-sans-pro-700-bold-latin.woff2')
+  format("truetype");
+  }
+
+
+a,abbr,address,
+article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,
+dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,
+h5,h6,header,hgroup,html,i,img,input,ins,kbd,label,legend,li,menu,nav,object,ol,p,pre,q,
+samp,section,small,span,strong,sub,summary,sup,table,tbody,td,textarea,tfoot,th,thead,tr,
+ul,var,video {
   background: transparent;
   border: 0;
   margin: 0;
