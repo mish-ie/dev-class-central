@@ -53,7 +53,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # Custom
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
+
 ]
 
 ROOT_URLCONF = 'Core.urls'
@@ -73,6 +76,12 @@ TEMPLATES = [
         },
     },
 ]
+
+# Locale paths for translation:
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'locale'),
+]
+
 
 WSGI_APPLICATION = 'Core.wsgi.application'
 
@@ -110,13 +119,18 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
+# Languages
+LANGUAGES = [
+    ('en', 'English'),
+    ('hi', 'Hindi'),
+]
 
-# LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en-us'
 
-# TIME_ZONE = 'UTC'
-LANGUAGE_CODE = 'hi'
+TIME_ZONE = 'UTC'
+# LANGUAGE_CODE = 'hi'
 
-TIME_ZONE = 'Asia/Kolkata'
+# TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 

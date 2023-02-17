@@ -1,4 +1,5 @@
 {% extends '../base.html' %}
+{% load i18n %}
 {% load static %}
 
 <!-- {% block title %}Home{% endblock %} -->
@@ -18,9 +19,7 @@
       <div class="width-100 medium-up-width-2-3 border-box medium-up-padding-left-large horz-align-right">
       {% verbatim %}
         <h2 class="head-2 medium-up-head-1 medium-down-padding-horz-xlarge text-center medium-up-text-left weight-bold margin-bottom-small">
-          {% for word in translated_words %}
-              {{ word|safe }}{% if not forloop.last %} {% endif %}
-          {% endfor %}
+          {% trans "Find your next course." %}
             </h2>
         {% endverbatim %}
 
