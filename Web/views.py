@@ -8,9 +8,68 @@ from django.utils.translation import get_language,activate,gettext
 def home(request):
    #  trans=translate(language='hi')
    return render(request, 'Home/Home.html')
- 
+
+def help(request):
+   return render(request, 'Home/Help.html')
+
+# Courses
 def free_certificates(request):
    return render(request, 'Courses/free-cert.html')
+
+def rbest_courses(request):
+   return render(request, 'Courses/report-best.html')
+
+def online_learning_deals(request):
+   return render(request, 'Courses/online-learning-deals.html')
+
+def computer_science(request):
+   return render(request, 'Courses/computer_science.html')
+
+def business(request):
+   return render(request, 'Courses/business.html')
+
+
+
+# Collections
+def ivy_league(request):
+   return render(request, 'Collections/ivy_league.html')
+
+def sustainability(request):
+   return render(request, 'Collections/sustainability.html')
+
+def best_off_all_time(request):
+   return render(request, 'Collections/best_off_all_time.html')
+
+
+# Universities
+def stanford(request):
+   return render(request, 'University/stanford.html')
+
+def mit(request):
+   return render(request, 'University/mit.html')
+
+
+# Institutions
+def google(request):
+   return render(request, 'Instituitions/google.html')
+
+def amazon(request):
+   return render(request, 'Instituitions/amazon.html')
+
+
+# Subject:
+def Subjects(request):
+   return render(request, 'Subjects/Subjects.html')
+ 
+
+
+
+
+
+
+
+
+
 
 
 
@@ -51,8 +110,6 @@ def Collections(request):
 def Collection(request):
    return render(request, 'Collections/Collection.html')
   
-def Subjects(request):
-   return render(request, 'Subjects/Subjects.html')
 
 def Subject(request):
    return render(request, 'Subjects/Subject.html')
