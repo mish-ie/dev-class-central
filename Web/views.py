@@ -9,6 +9,19 @@ def home(request):
    #  trans=translate(language='hi')
    return render(request, 'Home/Home.html')
  
+def free_certificates(request):
+   return render(request, 'Courses/free-cert.html')
+
+
+
+
+
+
+
+
+
+
+
 def Courses(request):
    return render(request, 'Courses/Courses.html')
  

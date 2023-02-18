@@ -29,4 +29,10 @@ urlpatterns = [
     
     path('reports/', views.Reports, name='Reports'),
     path('report/', views.Report, name='Report'),
+    
+    # Defined New Strategy
+    path('report/free-certificates/', views.free_certificates, name='FreeCertificates'),
+    
+    
+    
 ]

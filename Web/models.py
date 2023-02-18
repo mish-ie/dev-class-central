@@ -16,10 +16,10 @@ class Provider(models.Model):
     
     
     
-class Instructor(models.Model):
-    name = models.CharField(max_length=255)
-    bio = models.TextField()
-    photo = models.ImageField(upload_to='instructor_photos')
+# class Instructor(models.Model):
+#     name = models.CharField(max_length=255)
+#     bio = models.TextField()
+#     photo = models.ImageField(upload_to='instructor_photos')
     
 
 class Course(models.Model):
@@ -28,7 +28,7 @@ class Course(models.Model):
     provider = models.ForeignKey(Provider, on_delete=models.CASCADE, related_name='courses_provided')
     universities = models.ManyToManyField(University, related_name='courses_offered')
     subjects = models.ManyToManyField('Subject', related_name='courses')
-    instructors = models.ManyToManyField('Instructor', related_name='courses_taught')
+    # instructors = models.ManyToManyField('Instructor', related_name='courses_taught')
     url = models.URLField(max_length=255)
     workload = models.CharField(max_length=255, null=True, blank=True)
     language = models.CharField(max_length=255, null=True, blank=True)
@@ -67,17 +67,17 @@ class Ranking(models.Model):
     
 
 
-class Report(models.Model):
-    title = models.CharField(max_length=255)
-    author = models.CharField(max_length=255)
-    author_profile_picture = models.ImageField(upload_to='author_photos')
-    author_bio = models.TextField()
-    image = models.ImageField(upload_to='report_images')
-    content = models.TextField()
-    course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name='reports')
-    publication_date = models.DateField()
-    url = models.URLField()
-    summary = models.TextField()
+# class Report(models.Model):
+#     title = models.CharField(max_length=255)
+#     author = models.CharField(max_length=255)
+#     author_profile_picture = models.ImageField(upload_to='author_photos')
+#     author_bio = models.TextField()
+#     image = models.ImageField(upload_to='report_images')
+#     content = models.TextField()
+#     course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name='reports')
+#     publication_date = models.DateField()
+#     url = models.URLField()
+#     summary = models.TextField()
 
 class Institution(models.Model):
     name = models.CharField(max_length=255)
@@ -85,6 +85,7 @@ class Institution(models.Model):
     description = models.TextField()
     courses = models.ManyToManyField('Course')
     logo = models.ImageField(upload_to='institutions/', null=True, blank=True)
+    follow_count = models.IntegerField(null=True, blank=True)
 
 
 
