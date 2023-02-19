@@ -42,6 +42,9 @@ def best_off_all_time(request):
 
 
 # Universities
+def University(request):
+   return render(request, 'University/University.html')
+
 def stanford(request):
    return render(request, 'University/stanford.html')
 
@@ -85,14 +88,19 @@ def duke(request):
 
 
 
-
-
 # Institutions
+def Institutions(request):
+   return render(request, 'Institutions/Institutions.html')
+
 def google(request):
    return render(request, 'Instituitions/google.html')
 
 def amazon(request):
    return render(request, 'Instituitions/amazon.html')
+
+
+
+
 
 
 # Subject:
@@ -101,15 +109,33 @@ def Subjects(request):
  
 
 
+# Providers
+def Providers(request):
+   return render(request, 'Providers/Providers.html')
+ 
+def coursera(request):
+   return render(request, 'Providers/coursera.html')
+
+def Edx(request):
+   return render(request, 'Providers/Edx.html')
+
+def futurelearn(request):
+   return render(request, 'Providers/futurelearn.html')
+
+def udemy(request):
+   return render(request, 'Providers/udemy.html')
+
+def linkedin_learning(request):
+   return render(request, 'Providers/linkedin_learning.html')
+
+def skillshare(request):
+   return render(request, 'Providers/skillshare.html')
 
 
 
-
-
-
-
-
-
+# Ranking
+def Rankings(request):
+   return render(request, 'Rankings/Rankings.html')
 
 
 
@@ -123,20 +149,9 @@ def Courses(request):
    return render(request, 'Courses/Courses.html')
  
 def Course(request):
-   return render(request, 'Courses/Course.html')
-
- 
-def Institutions(request):
-   return render(request, 'Institutions/Institutions.html')
- 
+   return render(request, 'Courses/Course.html') 
 def Institution(request):
-   return render(request, 'Institutions/Institution.html')
- 
- 
- 
-def Rankings(request):
-   return render(request, 'Rankings/Rankings.html')
- 
+   return render(request, 'Institutions/Institution.html') 
 def Ranking(request):
    return render(request, 'Rankings/Ranking.html')
  
@@ -147,23 +162,10 @@ def Collections(request):
  
 def Collection(request):
    return render(request, 'Collections/Collection.html')
-  
-
 def Subject(request):
    return render(request, 'Subjects/Subject.html')
- 
-  
-def University(request):
-   return render(request, 'University/University.html')
- 
 def Uni(request):
    return render(request, 'University/Uni.html')
- 
- 
- 
-def Providers(request):
-   return render(request, 'Providers/Providers.html')
- 
 def Provider(request):
    return render(request, 'Providers/Provider.html')
  

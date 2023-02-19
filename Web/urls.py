@@ -9,7 +9,6 @@ urlpatterns = [
     
     path('courses/', views.Courses, name='Courses'),
     path('course/', views.Course, name='Course'),
-    path('instituitions/', views.Institutions, name='Institutions'),
     path('instituition/', views.Institution, name='Institution'),
     path('rankings/', views.Rankings, name='Rankings'),
     path('ranking/', views.Ranking, name='Ranking'),   
@@ -19,7 +18,6 @@ urlpatterns = [
     
     path('subject/', views.Subject, name='Subject'),
     path('uni/', views.Uni, name='Uni'),
-    path('providers/', views.Providers, name='Providers'),
     path('provider/', views.Provider, name='Provider'), 
     path('reports/', views.Reports, name='Reports'),
     path('report/', views.Report, name='Report'),
@@ -36,6 +34,16 @@ urlpatterns = [
     path('subjects/', views.Subjects, name='Subjects'),
     path('subject/cs/', views.computer_science, name='cs'),
     path('subject/business/', views.business, name='business'),
+    
+    
+    path('providers/', views.Providers, name='Providers'),
+    path('provider/coursera/', views.coursera, name='coursera'),
+    path('provider/edx/', views.Edx, name='Edx'),
+    path('provider/futurelearn/', views.futurelearn, name='futurelearn'),
+    path('provider/udemy/', views.udemy, name='udemy'),
+    path('provider/swayam/', views.swayam, name='swayam'),
+    path('provider/linkedin-learning/', views.linkedin_learning, name='linkedin_learning'),
+    path('provider/skillshare/', views.skillshare, name='skillshare'),
 
 
 
@@ -62,8 +70,10 @@ urlpatterns = [
     path('collection/ivy-league-moocs/', views.ivy_league, name='ivy_league'),
     
     
+    path('instituitions/', views.Institutions, name='Institutions'),
     path('institution/google/', views.google, name='google'),
     path('institution/amazon/', views.amazon, name='amazon'),
+    path('institution/microsoft/', views.microsoft, name='microsoft'),
 
     
 ]
