@@ -27,6 +27,23 @@ urlpatterns = [
     path('report/free-certificates/', views.free_certificates, name='FreeCertificates'),
     path('report/category/best-courses/', views.rbest_courses, name='rbest_courses'),
     path('report/online-learning-deals/', views.online_learning_deals, name='ronline_learning'),
+    path('report/udemy-layoffs/', views.udemy_layoffs, name='udemy_layoffs'),
+    path('report/harvard-cs50-guide/', views.harvard_cs50_guide, name='harvard_cs'),
+    path('report/chinese-mooc-platforms/', views.chinese_mooc_platforms, name='chinese_mooc_platforms'),
+    path('report/futurelearn-expands-paywall/', views.futurelearn_expands_paywall, name='futurelearn_expands'),
+    path('report/udemy-by-the-numbers/', views.udemy_by_the_numbers, name='udemy_by_the_numbers'),
+    path('report/domestika-layoffs/', views.domestika_layoffs, name='domestika_lay'),
+    path('report/thinkific-layoffs/', views.thinkific_layoffs, name='thinkific_lay'),
+    path('report/udemy-new-ceo/', views.udemy_new_ceo, name='udemy_new_ceo'),
+    path('report/cs50-free-certificate/', views.cs50_free_certificate, name='cs50_free_certificate'),
+    path('report/best-davinci-resolve-courses/', views.best_davinci_resolve_courses, name='best_davinci_resolve_courses'),
+    path('report/best-free-prolog-courses/', views.best_free_prolog_courses, name='best_free_prolog_courses'),
+    path('report/best-japanese-courses/', views.best_japanese_courses, name='best_japanese_courses'),
+    path('report/best-erlang-courses/', views.best_erlang_courses, name='best_erlang_courses'),
+    path('report/best-css-animation-courses/', views.best_css_animation_courses, name='best_css_animation_courses'),
+    
+    
+    
     
     path('rankings/', views.Rankings, name='Rankings'),
 

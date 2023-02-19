@@ -153,9 +153,51 @@ def Rankings(request):
    return render(request, 'Rankings/Rankings.html')
 
 
+# Reports:
+def Reports(request):
+   return render(request, 'Reports/Reports.html')
 
+def udemy_layoffs(request):
+   return render(request, 'Reports/udemy_layoffs.html')
 
+def harvard_cs50_guide(request):
+   return render(request, 'Reports/harvard_cs50_guide.html')
 
+def chinese_mooc_platforms(request):
+   return render(request, 'Reports/chinese_mooc_platforms.html')
+
+def futurelearn_expands_paywall(request):
+   return render(request, 'Reports/futurelearn_expands_paywall.html')
+
+def udemy_by_the_numbers(request):
+   return render(request, 'Reports/udemy_by_the_numbers.html')
+
+def domestika_layoffs(request):
+   return render(request, 'Reports/domestika_layoffs.html')
+
+def thinkific_layoffs(request):
+   return render(request, 'Reports/thinkific_layoffs.html')
+
+def udemy_new_ceo(request):
+   return render(request, 'Reports/udemy_new_ceo.html')
+
+def cs50_free_certificate(request):
+   return render(request, 'Reports/cs50_free_certificate.html')
+
+def best_davinci_resolve_courses(request):
+   return render(request, 'Reports/best_davinci_resolve_courses.html')
+
+def best_free_prolog_courses(request):
+   return render(request, 'Reports/best_free_prolog_courses.html')
+
+def best_japanese_courses(request):
+   return render(request, 'Reports/best_japanese_courses.html')
+
+def best_erlang_courses(request):
+   return render(request, 'Reports/best_erlang_courses.html')
+
+def best_css_animation_courses(request):
+   return render(request, 'Reports/best_css_animation_courses.html')
 
 
 def Collections(request):
@@ -164,8 +206,7 @@ def Collections(request):
 def Courses(request):
    return render(request, 'Courses/Courses.html')
 
-def Reports(request):
-   return render(request, 'Reports/Reports.html')
+
  
  
 def Course(request):
