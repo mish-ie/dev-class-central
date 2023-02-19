@@ -61,6 +61,8 @@ MIDDLEWARE = [
 
 ]
 
+from django.utils.translation import gettext_lazy as _
+
 ROOT_URLCONF = 'Core.urls'
 
 TEMPLATES = [
@@ -118,6 +120,17 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
+LANGUAGES = [
+      ('en', _('English')),
+      ('hi', _('Hindi')),
+      ]
+
+
+# Locale paths for translation:
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+  )
+
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -147,20 +160,8 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
-# Languages
-from django.utils.translation import ugettext_lazy as _
-LANGUAGES = (
-  
-   ('en', _('English')),
-   ('hi', _('Hindi')),
-   
-)
 
 # Default primary key field type
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Locale paths for translation:
-LOCALE_PATHS = [
-    os.path.join(BASE_DIR, 'locale'),
-]
