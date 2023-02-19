@@ -31,6 +31,10 @@ def business(request):
 
 
 # Collections
+
+def Collections(request):
+   return render(request, 'Collections/Collections.html')
+
 def ivy_league(request):
    return render(request, 'Collections/ivy_league.html')
 
@@ -39,6 +43,18 @@ def sustainability(request):
 
 def best_off_all_time(request):
    return render(request, 'Collections/best_off_all_time.html')
+
+def udemy_top_courses(request):
+   return render(request, 'Collections/udemy_top_courses.html')
+
+def india_online_degrees(request):
+   return render(request, 'Collections/india_online_degrees.html')
+
+def mooc_based_masters_degree(request):
+   return render(request, 'Collections/mooc_based_masters_degree.html')
+
+def most_popular_online_courses(request):
+   return render(request, 'Collections/most_popular_online_courses.html')
 
 
 # Universities
@@ -200,8 +216,6 @@ def best_css_animation_courses(request):
    return render(request, 'Reports/best_css_animation_courses.html')
 
 
-def Collections(request):
-   return render(request, 'Collections/Collections.html')
 
 def Courses(request):
    return render(request, 'Courses/Courses.html')

@@ -41,8 +41,11 @@ urlpatterns = [
     path('report/best-japanese-courses/', views.best_japanese_courses, name='best_japanese_courses'),
     path('report/best-erlang-courses/', views.best_erlang_courses, name='best_erlang_courses'),
     path('report/best-css-animation-courses/', views.best_css_animation_courses, name='best_css_animation_courses'),
-    
-    
+    path('report/udemy-top-courses/', views.udemy_top_courses, name='udemy_top_courses'),
+    path('report/india-online-degrees/', views.india_online_degrees, name='india_online_degrees'),
+    path('report/mooc-based-masters-degree/', views.mooc_based_masters_degree, name='mooc_based_masters_degree'),
+    path('report/most-popular-online-courses/', views.most_popular_online_courses, name='most_popular_online_courses'),
+    path('report/list-of-mooc-based-microcredentials/', views.most_popular_online_courses, name='most_popular_online_courses'),
     
     
     path('rankings/', views.Rankings, name='Rankings'),
