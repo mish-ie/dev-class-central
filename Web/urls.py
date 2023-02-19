@@ -5,7 +5,7 @@ app_name = 'Web'
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('help/moocs/', views.help, name='help'),)
+    path('help/moocs/', views.help, name='help'),
     
     path('courses/', views.Courses, name='Courses'),
     path('course/', views.Course, name='Course'),
@@ -43,6 +43,19 @@ urlpatterns = [
     path('universities/', views.University, name='University'),
     path('university/stanford/', views.stanford, name='stanford'),
     path('university/mit/', views.mit, name='mit'),
+    path('university/harvard/', views.harvard, name='harvard'),
+    path('university/iit-kharagpur/', views.iit_kharagpur, name='iit_kharagpur'),
+    path('university/rice/', views.rice, name='rice'),
+    path('university/columbia/', views.columbia, name='columbia'),
+    path('university/edinburgh/', views.edinburgh, name='edinburgh'),
+    path('university/penn/', views.penn, name='penn'),
+    path('university/umich/', views.umich, name='umich'),
+    path('university/iitm/', views.iitm, name='iitm'),
+    path('university/cornell/', views.cornell, name='cornell'),
+    path('university/purdue/',views.purdue, name='purdue'),
+    path('university/duke/', views.duke, name='duke'),
+    
+    
     
     path('collection/top-free-online-courses/', views.best_off_all_time, name='best_off_all_time'),
     path('collection/sustainability-online-courses/', views.sustainability, name='sustainability'),

@@ -48,6 +48,44 @@ def stanford(request):
 def mit(request):
    return render(request, 'University/mit.html')
 
+def harvard(request):
+   return render(request, 'University/harvard.html')
+
+def iit_kharagpur(request):
+   return render(request, 'University/iit_kharagpur.html')
+
+def rice(request):
+   return render(request, 'University/rice.html')
+
+
+def columbia(request):
+   return render(request, 'University/columbia.html')
+
+def edinburgh(request):
+   return render(request, 'University/edinburgh.html')
+
+def penn(request):
+   return render(request, 'University/penn.html')
+
+def umich(request):
+   return render(request, 'University/umich.html')
+
+def iitm(request):
+   return render(request, 'University/iitm.html')
+
+def cornell(request):
+   return render(request, 'University/cornell')
+
+def purdue(request):
+   return render(request, 'University/purdue.html')
+
+def duke(request):
+   return render(request, 'University/duke.html')
+
+
+
+
+
 
 # Institutions
 def google(request):
