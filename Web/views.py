@@ -9,8 +9,23 @@ def home(request):
    #  trans=translate(language='hi')
    return render(request, 'Home/Home.html')
 
-def help(request):
+def about(request):
+   return render(request, 'Home/About.html')
+
+def get_help(request):
    return render(request, 'Home/Help.html')
+
+def faqs(request):
+   return render(request, 'Home/faqs.html')
+
+def privacy_policy(request):
+   return render(request, 'Home/PrivacyPolicy.html')
+
+def careers(request):
+   return render(request, 'Home/careers.html')
+
+def contact(request):
+   return render(request, 'Home/contact.html')
 
 # Courses
 def free_certificates(request):
@@ -60,6 +75,9 @@ def most_popular_online_courses(request):
 # Universities
 def University(request):
    return render(request, 'University/University.html')
+
+def gatech(request):
+   return render(request, 'University/gatech.html')
 
 def stanford(request):
    return render(request, 'University/stanford.html')
@@ -115,7 +133,7 @@ def amazon(request):
    return render(request, 'Instituitions/amazon.html')
 
 def microsoft(request):
-   return render(request, 'Instituitions/microsoft')
+   return render(request, 'Instituitions/microsoft.html')
 
 def ibm(request):
    return render(request, 'Instituitions/ibm.html')
@@ -124,23 +142,49 @@ def smithsonian(request):
    return render(request, 'Instituitions/smithsonian.html')
 
 def unccelearn(request):
-   return render(request, 'Instituations/unccelearn.html')
+   return render(request, 'Instituitions/unccelearn.html')
 
 def british_council(request):
-   return render(request, 'Institutions/british-council.html')
+   return render(request, 'Instituitions/british-council.html')
+
+def salesforce(request):
+   return render(request, 'Instituitions/salesforce.html')
+
+def linuxfoundation(request):
+   return render(request, 'Instituitions/linuxfoundation.html')
 
 
 
 # Subject:
 def Subjects(request):
    return render(request, 'Subjects/Subjects.html')
+
+def Psychology(request):
+   return render(request, 'Subjects/Psychology.html')
+
+def cybersecurity(request):
+   return render(request, 'Subjects/cybersecurity.html')
+
+def law(request):
+   return render(request, 'Subjects/law.html')
+
+def health(request):
+   return render(request, 'Subjects/health.html')
+
+def accounting(request):
+   return render(request, 'Subjects/accounting.html')
+
+def web_development(request):
+   return render(request, 'Subjects/web_development.html')
  
 
 
 # Providers
 def Providers(request):
    return render(request, 'Providers/Providers.html')
- 
+
+def udacity(request):
+   return render(request, 'Providers/udacity.html')
 def coursera(request):
    return render(request, 'Providers/coursera.html')
 
@@ -172,6 +216,39 @@ def Rankings(request):
 # Reports:
 def Reports(request):
    return render(request, 'Reports/Reports.html')
+
+def the_2022_year_in_review(request):
+   return render(request, 'Reports/the_2022_year_in_review.html')
+
+def central_ddos_attack(request):
+   return render(request, 'Reports/central_ddos_attack.html')
+
+def open_university_insiders_perspective(request):
+   return render(request, 'Reports/open_university_insiders_perspective.html')
+
+def free_google_certifications(request):
+   return render(request, 'Reports/free_google_certifications.html')
+
+def linkedin_learning_free_learning_paths(request):
+   return render(request, 'Reports/linkedin_learning_free_learning.html')
+
+def coursera_free_online_courses(request):
+   return render(request, 'Reports/coursera_free_online_courses.html')
+
+def writing_free_online_courses(request):
+   return render(request, 'Reports/writing_free_online_courses.html')
+
+def best_free_online_courses_2022(request):
+   return render(request, 'Reports/best_free_online_courses_2022.html')
+
+def best_free_online_courses_2023(request):
+   return render(request, 'Reports/best_free_online_courses_2023.html')
+
+def coursera_top_courses_2023(request):
+   return render(request, 'Reports/coursera_top_courses_2023.html')
+
+def edx_top_courses(request):
+   return render(request, 'Reports/edx_top_courses.html')
 
 def udemy_layoffs(request):
    return render(request, 'Reports/udemy_layoffs.html')

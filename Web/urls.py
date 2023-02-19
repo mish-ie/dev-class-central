@@ -5,7 +5,12 @@ app_name = 'Web'
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('help/moocs/', views.help, name='help'),
+    path('help/moocs/', views.get_help, name='help'),
+    path('about/', views.about, name='about'),
+    path('help/', views.faqs, name='faqs'),
+    path('about/privacy-policy/', views.privacy_policy, name='privacy'),
+    path('about/careers/', views.careers, name='careers'),
+    path('contact/', views.contact, name='contact'),
     
     path('courses/', views.Courses, name='Courses'),
     path('course/', views.Course, name='Course'),
@@ -46,6 +51,17 @@ urlpatterns = [
     path('report/mooc-based-masters-degree/', views.mooc_based_masters_degree, name='mooc_based_masters_degree'),
     path('report/most-popular-online-courses/', views.most_popular_online_courses, name='most_popular_online_courses'),
     path('report/list-of-mooc-based-microcredentials/', views.most_popular_online_courses, name='most_popular_online_courses'),
+    path('report/best-free-online-courses-2022/', views.best_free_online_courses_2022, name='best_free_online_courses_2022'),
+    path('report/most-popular-courses-2023/', views.best_free_online_courses_2023, name='best_free_online_courses_2023'),
+    path('report/coursera-top-courses/', views.coursera_top_courses_2023, name='coursera_top_courses_2023'),
+    path('report/edx-top-courses/', views.edx_top_courses, name='edx_top_courses'),
+    path('report/2022-year-in-review/', views.the_2022_year_in_review, name='2022_year_in_review'),
+    path('report/class-central-ddos-attack/', views.central_ddos_attack, name='ddos_attack'),
+    path('report/open-university-insiders-perspective/', views.open_university_insiders_perspective, name='open_university_insiders_perspective'),
+    path('report/free-google-certifications/', views.free_google_certifications, name='free_google_cert'),
+    path('report/linkedin-learning-free-learning-paths/', views.linkedin_learning_free_learning_paths, name='flinkedin_learning'),
+    path('report/coursera-free-online-courses/', views.coursera_free_online_courses, name='fcoursera'),
+    path('report/writing-free-online-courses/', views.writing_free_online_courses, name='writing_free'),
     
     
     path('rankings/', views.Rankings, name='Rankings'),
@@ -54,6 +70,12 @@ urlpatterns = [
     path('subjects/', views.Subjects, name='Subjects'),
     path('subject/cs/', views.computer_science, name='cs'),
     path('subject/business/', views.business, name='business'),
+    path('subject/psychology/', views.Psychology, name='Psychology'),
+    path('subject/cybersecurity/', views.cybersecurity, name='cybersecurity'),
+    path('subject/law/', views.law, name='law'),
+    path('subject/health/', views.health, name='health'),
+    path('subject/accounting/', views.accounting, name='accounting'),
+    path('subject/web-development/', views.web_development, name='web_development'),
     
     
     path('providers/', views.Providers, name='Providers'),
@@ -64,6 +86,9 @@ urlpatterns = [
     path('provider/swayam/', views.swayam, name='swayam'),
     path('provider/linkedin-learning/', views.linkedin_learning, name='linkedin_learning'),
     path('provider/skillshare/', views.skillshare, name='skillshare'),
+    path('provider/udacity/', views.udacity, name='udacity'),
+    path('provider/unccelearn/', views.unccelearn, name='unccelearn'),
+
 
 
 
@@ -82,6 +107,7 @@ urlpatterns = [
     path('university/cornell/', views.cornell, name='cornell'),
     path('university/purdue/',views.purdue, name='purdue'),
     path('university/duke/', views.duke, name='duke'),
+    path('university/gatech/', views.gatech, name='gatech'),
     
     
     
@@ -96,8 +122,9 @@ urlpatterns = [
     path('institution/microsoft/', views.microsoft, name='microsoft'),
     path('institution/ibm/', views.ibm, name='ibm'),
     path('institution/smithsonian/', views.smithsonian, name='smithsonian'),
-    path('provider/unccelearn/', views.unccelearn, name='unccelearn'),
-    path('nstitution/british-council/', views.british_council, name='british_council'),
+    path('institution/british-council/', views.british_council, name='british_council'),
+    path('institution/salesforce/', views.salesforce, name='salesforce'),
+    path('institution/linuxfoundation/', views.linuxfoundation, name='linuxfoundation'),
 
     
 ]
