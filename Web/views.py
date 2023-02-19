@@ -90,13 +90,16 @@ def duke(request):
 
 # Institutions
 def Institutions(request):
-   return render(request, 'Institutions/Institutions.html')
+   return render(request, 'Instituitions/Institutions.html')
 
 def google(request):
    return render(request, 'Instituitions/google.html')
 
 def amazon(request):
    return render(request, 'Instituitions/amazon.html')
+
+def microsoft(request):
+   return render(request, 'Instituitions/microsoft')
 
 def ibm(request):
    return render(request, 'Instituitions/ibm.html')
@@ -134,6 +137,9 @@ def futurelearn(request):
 def udemy(request):
    return render(request, 'Providers/udemy.html')
 
+def swayam(request):
+   return render(request, 'Providers/swayam.html')
+
 def linkedin_learning(request):
    return render(request, 'Providers/linkedin_learning.html')
 
@@ -152,10 +158,15 @@ def Rankings(request):
 
 
 
-
+def Collections(request):
+   return render(request, 'Collections/Collections.html')
 
 def Courses(request):
    return render(request, 'Courses/Courses.html')
+
+def Reports(request):
+   return render(request, 'Reports/Reports.html')
+ 
  
 def Course(request):
    return render(request, 'Courses/Course.html') 
@@ -163,12 +174,6 @@ def Institution(request):
    return render(request, 'Institutions/Institution.html') 
 def Ranking(request):
    return render(request, 'Rankings/Ranking.html')
- 
- 
- 
-def Collections(request):
-   return render(request, 'Collections/Collections.html')
- 
 def Collection(request):
    return render(request, 'Collections/Collection.html')
 def Subject(request):
@@ -177,12 +182,6 @@ def Uni(request):
    return render(request, 'University/Uni.html')
 def Provider(request):
    return render(request, 'Providers/Provider.html')
- 
- 
- 
-def Reports(request):
-   return render(request, 'Reports/Reports.html')
- 
 def Report(request):
    return render(request, 'Reports/Report.html')
  

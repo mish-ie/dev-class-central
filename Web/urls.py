@@ -10,7 +10,6 @@ urlpatterns = [
     path('courses/', views.Courses, name='Courses'),
     path('course/', views.Course, name='Course'),
     path('instituition/', views.Institution, name='Institution'),
-    path('rankings/', views.Rankings, name='Rankings'),
     path('ranking/', views.Ranking, name='Ranking'),   
     
     path('collections/', views.Collections, name='Collections'),
@@ -29,7 +28,8 @@ urlpatterns = [
     path('report/category/best-courses/', views.rbest_courses, name='rbest_courses'),
     path('report/online-learning-deals/', views.online_learning_deals, name='ronline_learning'),
     
-    
+    path('rankings/', views.Rankings, name='Rankings'),
+
     
     path('subjects/', views.Subjects, name='Subjects'),
     path('subject/cs/', views.computer_science, name='cs'),
@@ -70,7 +70,7 @@ urlpatterns = [
     path('collection/ivy-league-moocs/', views.ivy_league, name='ivy_league'),
     
     
-    path('instituitions/', views.Institutions, name='Institutions'),
+    path('institutions/', views.Institutions, name='Institutions'),
     path('institution/google/', views.google, name='google'),
     path('institution/amazon/', views.amazon, name='amazon'),
     path('institution/microsoft/', views.microsoft, name='microsoft'),
