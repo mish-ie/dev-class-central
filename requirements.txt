@@ -3,6 +3,7 @@ certifi==2022.12.7
 chardet==3.0.4
 Django==3.2.18
 googletrans==4.0.0rc1
+gunicorn==20.1.0
 h11==0.9.0
 h2==3.2.0
 hpack==3.0.0
@@ -12,7 +13,6 @@ httpx==0.13.3
 hyperframe==5.2.0
 idna==2.10
 Pillow==9.4.0
-pkg-resources==0.0.0
 psycopg2==2.9.5
 python-dotenv==0.21.1
 python-gettext==4.1
