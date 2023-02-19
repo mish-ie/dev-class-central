@@ -11,6 +11,8 @@ urlpatterns = [
     path('about/privacy-policy/', views.privacy_policy, name='privacy'),
     path('about/careers/', views.careers, name='careers'),
     path('contact/', views.contact, name='contact'),
+    path('signup/', views.signup, name='signup'),
+    path('login/', views.login, name='login'),
     
     path('courses/', views.Courses, name='Courses'),
     path('course/', views.Course, name='Course'),
@@ -62,7 +64,12 @@ urlpatterns = [
     path('report/linkedin-learning-free-learning-paths/', views.linkedin_learning_free_learning_paths, name='flinkedin_learning'),
     path('report/coursera-free-online-courses/', views.coursera_free_online_courses, name='fcoursera'),
     path('report/writing-free-online-courses/', views.writing_free_online_courses, name='writing_free'),
+    path('report/review-exploratory-data-analysis-matlab/', views.data_analysis_matlab, name='data_analysis_matlab'),
+    path('report/review-learning-to-teach/', views.learn_to_teach, name='learn_to_teach'),
+    path('report/most-popular-march-2023/', views.most_popular_march_2023, name='most_popular_march_2023'),
     
+    
+    path('report/author/dhawal/', views.author_dhawal, name='author_dhawal'),
     
     path('rankings/', views.Rankings, name='Rankings'),
 

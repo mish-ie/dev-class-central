@@ -1,0 +1,65 @@
+ <header data-cc-header="nosearch" class="z-top relative">
+  <div class="relative bg-white cc-header border-bottom border-gray-light">
+    <nav class="cmpt-nav row nowrap vert-align-middle absolute width-100 padding-horz-medium border-box">
+      <a
+        class="block medium-up-margin-right-large cmpt-nav-logo"
+        data-track-click="nav_click"
+        data-track-props='{ "type": "homepage", "title": "logo" }'
+        data-track-ga='{"category": "nav_click", "action": "homepage", "label":"top"}'
+        href="/">
+        <i class="symbol-classcentral-navy symbol-medium hidden large-up-block"></i>
+        <i class="relative symbol-classcentral-navy symbol-small block large-up-hidden"></i>
+        <span class="off-page">Class Central</span>
+      </a>
+
+      <button data-name="LARGE_UP_MAIN_NAV_TRIGGER" class="hidden weight-semi large-up-block text-1 color-charcoal padding-right-small" type="button">
+        Courses
+      </button>
+
+      <a 
+      style="width: 80px; top: 4px;"
+      href="https://www.classcentral.com/report/"
+      
+      class="relative inline-block symbol-report">
+      The Report
+    </a>
+
+ <!-- n -->
+ <button
+ data-track-ga='[
+   { "category": "Lists", "action": "Add Item", "label": "Navbar"},
+   { "category": "nav_click", "action": "lists", "label":"add item"}
+ ]'
+ aria-label="Your lists"
+ data-name="NAV_TRIGGER"
+ data-detail='{"name": "lists"}'
+ class="cmpt-nav-add-item btn-circle btn-medium btn-white text-center"
+>
+ <i class="icon-small icon-list-add-charcoal"></i>
+</button>
+
+    <!-- l os s -->
+    <div class="hidden xlarge-up-inline-block">
+      <a
+        data-track-click="nav_click"
+        data-track-props='{ "type": "User", "title": "Login" }'
+        data-track-ga='{"category": "nav_click", "action": "user", "label":"login"}'
+        href="/login" class="text-1 weight-semi color-charcoal">Log in</a>
+      <span class="inline-block padding-horz-xxsmall color-charcoal">or</span>
+      <a
+        data-name="SIGNUP_LINK"
+        data-detail='{"source": "navbar" }'
+        data-track-click="nav_click"
+        data-track-props='{ "type": "User", "title": "Register" }'
+        data-track-ga='{"category": "nav_click", "action": "user", "label":"register"}'
+        href="/signup"
+        class="text-1 weight-semi color-charcoal"
+      >
+        Sign up
+      </a>
+    </div>
+
+    <!-- ************************* -->
+</div>          
+<div class="animate-fade-hidden width-100 height-100 fixed top left" data-name="BLANKET" data-detail='{}' data-header-blanket></div>
+</header>

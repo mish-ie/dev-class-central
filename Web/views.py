@@ -27,6 +27,12 @@ def careers(request):
 def contact(request):
    return render(request, 'Home/contact.html')
 
+def login(request):
+   return render(request, 'Home/login.html')
+
+def signup(request):
+   return render(request, 'Home/signup.html')
+
 # Courses
 def free_certificates(request):
    return render(request, 'Courses/free-cert.html')
@@ -216,6 +222,18 @@ def Rankings(request):
 # Reports:
 def Reports(request):
    return render(request, 'Reports/Reports.html')
+
+def data_analysis_matlab(request):
+   return render(request, 'Reports/data_analysis_matlab.html')
+
+def learn_to_teach(request):
+   return render(request, 'Reports/learn_to_teach.html')
+
+def most_popular_march_2023(request):
+   return render(request, 'Reports/most_popular_march_2023.html')
+
+def author_dhawal(request):
+   return render(request, 'Reports/author_dhawal.html')
 
 def the_2022_year_in_review(request):
    return render(request, 'Reports/the_2022_year_in_review.html')
