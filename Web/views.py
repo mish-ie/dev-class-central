@@ -98,8 +98,17 @@ def google(request):
 def amazon(request):
    return render(request, 'Instituitions/amazon.html')
 
+def ibm(request):
+   return render(request, 'Instituitions/ibm.html')
 
+def smithsonian(request):
+   return render(request, 'Instituitions/smithsonian.html')
 
+def unccelearn(request):
+   return render(request, 'Instituations/unccelearn.html')
+
+def british_council(request):
+   return render(request, 'Institutions/british-council.html')
 
 
 

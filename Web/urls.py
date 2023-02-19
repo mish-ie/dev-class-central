@@ -74,6 +74,10 @@ urlpatterns = [
     path('institution/google/', views.google, name='google'),
     path('institution/amazon/', views.amazon, name='amazon'),
     path('institution/microsoft/', views.microsoft, name='microsoft'),
+    path('institution/ibm/', views.ibm, name='ibm'),
+    path('institution/smithsonian/', views.smithsonian, name='smithsonian'),
+    path('provider/unccelearn/', views.unccelearn, name='unccelearn'),
+    path('nstitution/british-council/', views.british_council, name='british_council'),
 
     
 ]
