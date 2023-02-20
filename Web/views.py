@@ -3,7 +3,6 @@ from googletrans import Translator
 from django.utils.translation import gettext as _
 from django.utils.translation import get_language,activate,gettext
 
-
     
 def home(request):
    #  trans=translate(language='hi')
