@@ -66,6 +66,28 @@ hr {
   overflow: visible
 }
 
+/* .navHov:hover{
+  cursor: pointer !important;
+  display: block;
+  position: absolute;
+  left: 5em;
+  top: 0.1rem;
+  width: 170px; 
+  margin-top: 0.7rem; 
+  background-color: #fff  !important;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0 , 0, 0.2);
+} */
+
+/* 
+html:hover:not(.navHov:hover) {
+  background-color: rgba(0, 0, 0, 0.3); } */
+
+/* navHov + div {
+  background-color: #f7f7f7; 
+} */
+
+
 pre {
   font-family: monospace, monospace;
   font-size: 1em
@@ -137,8 +159,8 @@ select {
 [type=reset],
 [type=submit],
 .button {
-  -webkit-appearance: button
-}
+  -webkit-appearance: button;
+  appearance: button;}
 
 [type=button]::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,
@@ -200,6 +222,7 @@ textarea {
 
 [type=search] {
   -webkit-appearance: textfield;
+  appearance: textfield;
   outline-offset: -2px
 }
 
@@ -693,9 +716,9 @@ img:-moz-loading {
   transform: translateX(-10px)
 }
 
-.icon-chevron-right-white {}
+/* .icon-chevron-right-white {} */
 
-.icon-play-white {}
+/* .icon-play-white {} */
 
 .l-subjects-page__header {
   display: grid;
@@ -858,7 +881,7 @@ img:-moz-loading {
 
 @media (hover:hover) {
   .l-subjects-page__subject-link:hover .l-subjects-page__subject-label {
-    text-decoration-color: #6f7074
+    text-decoration-color: #6f7074 !important;
   }
 }
 
@@ -1072,7 +1095,7 @@ img:-moz-loading {
   right: 0
 }
 
-. cc-header [data-menu-dropdown=report] {
+.cc-header [data-menu-dropdown=report] {
   max-width: 600px;
   min-width: 600px
 }
@@ -1110,7 +1133,7 @@ img:-moz-loading {
   }
 }
 
-. cc-header [data-menu-dropdown=subjects] [data-menu-level="2"],
+.cc-header [data-menu-dropdown=subjects] [data-menu-level="2"],
 .cc-header [data-menu-dropdown=subjects] [data-menu-level="3"] {
   display: none
 }
@@ -1162,7 +1185,7 @@ img:-moz-loading {
 }
 
 .cmpt-nav-add-item:hover {
-  transform: scale(1.08)
+  transform: scale(1.08) !important;
 }
 
 .cmpt-unread {
@@ -1356,7 +1379,7 @@ img:-moz-loading {
 }
 
 tr .hide-on-hover {
-  display: block
+  display: block !important;
 }
 
 @media (max-width:1020px) {
@@ -2028,7 +2051,7 @@ tr:hover .show-on-hover {
 
   .main-nav-dropdown__item-control--highlighted:hover,
   .main-nav-dropdown__item-control:hover {
-    background-color: #edeef1
+    background-color: #edeef1 !important;
   }
 }
 
@@ -2823,7 +2846,7 @@ html.sticky-footer body {
 }
 
 html.sticky-footer .contain-page {
-  flex: 1 0 auto
+  flex: 1 0 auto 
 }
 
 footer.sticky-footer {
@@ -2831,7 +2854,7 @@ footer.sticky-footer {
 }
 
 .cursor-pointer:hover {
-  cursor: pointer
+  cursor: pointer !important;
 }
 
 .cursor-default:hover {
@@ -3452,6 +3475,7 @@ input.input-white.input-xlarge.icon-left {
 input.input-white,
 textarea.input-white {
   -webkit-appearance: none;
+  appearance: none;
   background-color: #fff;
   border: 1px solid #e2e2e2;
   border-radius: 3px;
@@ -3524,7 +3548,8 @@ textarea.input-white:focus.is-error::placeholder {
 
 select.btn-white {
   -moz-apperance: none;
-  -webkit-appearance: none
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 select.text-1,
@@ -3533,6 +3558,7 @@ select.text-3,
 select.text-4 {
   -moz-apperance: none;
   -webkit-appearance: none;
+  appearance: none;
   background-color: transparent;
   border: none
 }
@@ -3590,7 +3616,7 @@ select.text-4 {
 .bg-gray-xlight,
 .hover-bg-gray-xlight:focus,
 .hover-bg-gray-xlight:hover {
-  background-color: #f9fafc
+  background-color: #f9fafc !important;
 }
 
 .bg-yellow-mid,
@@ -3602,23 +3628,23 @@ select.text-4 {
 .bg-yellow-xlight,
 .hover-bg-yellow-xlight:focus,
 .hover-bg-yellow-xlight:hover {
-  background-color: #fff7e7
+  background-color: #fff7e7 !important;
 }
 
 .bg-gray-mid {
-  background-color: #dbdbe1
+  background-color: #dbdbe1 !important;
 }
 
 .bg-gray-light,
 .hover-bg-gray-light:focus,
 .hover-bg-gray-light:hover {
-  background-color: #edeef1
+  background-color: #edeef1 !important;
 }
 
 .bg-red-xlight,
 .hover-bg-red-xlight:focus,
 .hover-bg-red-xlight:hover {
-  background-color: #fff7f7
+  background-color: #fff7f7 !important;
 }
 
 .bg-cover {
@@ -6725,7 +6751,7 @@ img:not([src]) {
 }
 
 .bg-gray-xxlight {
-  background-color: #f7f7f7
+  background-color: #f7f7f7 !important;
 }
 
 .border-gray-light {
@@ -7218,6 +7244,7 @@ img:not([src]) {
 
 .classroom-course-progress {
   -webkit-appearance: none;
+  appearance: none;
   background-color: hsla(0, 0%, 100%, .2);
   border: 0;
   border-radius: 3px;
